@@ -1,0 +1,230 @@
+/* DISEÑO DE CUERPO DE PAGINA */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    background: linear-gradient(180deg, #FF8450 0%, #ff743d 100%);
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0; /* Eliminar el margen predeterminado del body */
+}
+
+/* BARRA DE NAVEGACION */
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.navbar-toggler-icon {
+  transition: transform 0.3s ease;
+}
+
+
+/* Estilo para el botón cuando está abierto */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  transform: rotate(90deg);
+}
+
+header {
+    width: 100%; 
+    overflow: hidden; 
+    background: linear-gradient(180deg, #ffffff 0%, #ff8e62 100%);
+    color: rgb(255, 255, 255);
+    padding: initial;
+}
+/* CARROUSEL MARTES 25.HTML */
+.carousel {
+    max-width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+/* FIN CARROUSEL MARTES 25.HTML */
+
+
+
+/* HEADER IMAGEN */
+.img-header {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+
+}
+
+/*TEXTO DE INTRODUCCION  */
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.379);
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+#intro {
+    display: flex;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    font-style:normal;
+    font-weight: 550;
+    line-height: normal;
+    padding: 15px;
+}
+#intro1 {
+    display: flex;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    font-style:normal;
+    font-weight: 550;
+    line-height: normal;
+    padding: 5px 15px;
+}
+
+/* SEPARADORES DE SECCIONES  */
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background:#5ab965;
+  padding:10px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.514);
+  text-align: center;
+}
+
+
+h5 {
+    color: white;
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* ESTILO BOTON VER FOTOS */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #45b14a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 20px rgba(30, 20, 11, 0.679);
+
+}
+
+.btn i {
+  margin-right: 20px;
+}
+
+.btn:hover {
+  background-color: #00a63d;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* SECCION OMS RECURSOS DESCARGABLES */
+.seccion-oms {
+    text-align: center;
+    border-radius: 17px;
+    background: #5c5656;   
+    justify-content: space-evenly; 
+}
+
+
+
+
+/* SECCION RESPONSIVE */
+
+@media (max-width: 575.98px) {
+    
+    body {
+      font-size: 14px;
+    }
+
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    
+    body {
+      font-size: 15px;
+    }
+  
+
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+      font-size: 16px;
+    }
+    
+
+  }
+  
+
+  @media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape) {
+ 
+    .navbar{
+      font-size: 14px;
+
+    }
+  }
+
+  @media (min-width: 992px) {
+    body {
+      font-size: 20px;
+      margin:0px 20px;
+    } 
+    .navbar{
+      font-size: 12px;
+
+    }
+    .img-header{
+      padding: 0px 100px 0px 100px;
+    }
+
+  }
+  
+  @media (min-width: 1200px) {
+    body {
+      font-size: 30px;
+    } 
+    .img-header{
+      padding: 0px 200px 0px 200px;
+    }
+    .navbar{
+      font-size: 12px;
+
+    }
+  }
