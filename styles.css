@@ -106,20 +106,26 @@ h1 {
   text-align: center;
 }
 
-.container {
+.containerr {
   display: flex;
-    justify-content: center; /* Alinea horizontalmente al centro */
-    align-items: center; /* Alinea verticalmente al centro */
-    margin: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 30px;
+
 }
 
+.imagen-con-borde {
+  text-align: center; /* Alineamos el contenido al centro horizontalmente */
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
 .imagen-con-borde img {
-  align-items: center;
-  justify-content: center;
-    max-width: 90%; /* Establecemos el ancho máximo de la imagen al 100% */
-    height: auto; /* Permitimos que la altura se ajuste automáticamente */
-    border: #5c565663 solid 10px;
+  display: block; /* Evitamos espacios no deseados debajo de las imágenes */
+  max-width: 70%;
+  height: auto;
+  margin: auto; /* Agregamos margen superior e inferior para separar las imágenes */
 }
 
 
