@@ -193,11 +193,17 @@ h5 {
 
 
 /* Estilos para la sección de la Playlist de Spotify */
-#spotify-playlist {
+.contenedorS {
   background-color: #000000d4;
   padding: 10px;
   text-align: center;
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 30px 10px;
+  text-align: center;
 }
 
 .playlist-container p {
@@ -209,7 +215,7 @@ h5 {
 
 #spotify-playlist a {
   text-decoration: none; /* Elimina la línea de hipervínculo */
-  color: #333; /* Cambia el color del texto del enlace */
+  color: #ffffff; /* Cambia el color del texto del enlace */
 }
 
 
