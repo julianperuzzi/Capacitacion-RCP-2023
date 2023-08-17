@@ -103,8 +103,23 @@ h1 {
   border-radius: 10px;
   margin: 10px;
   margin-top: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.514);
   text-align: center;
+}
+
+.container {
+  display: flex;
+    justify-content: center; /* Alinea horizontalmente al centro */
+    align-items: center; /* Alinea verticalmente al centro */
+    margin: 20px;
+}
+
+
+.imagen-con-borde img {
+  align-items: center;
+  justify-content: center;
+    max-width: 90%; /* Establecemos el ancho máximo de la imagen al 100% */
+    height: auto; /* Permitimos que la altura se ajuste automáticamente */
+    border: #5c565663 solid 10px;
 }
 
 
@@ -116,7 +131,7 @@ h5 {
 }
 
 
-/* ESTILO BOTON VER FOTOS */
+/* ESTILO BOTON  */
 .button-container {
   display: flex;
   justify-content: center;
@@ -130,16 +145,16 @@ h5 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 20px;
+  padding: 10px 25px;
   background-color: #45b14a;
   color: #fff;
   text-decoration: none;
   border-radius: 50px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  box-shadow: 0 0 20px rgba(30, 20, 11, 0.679);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.679);
 
 }
 
