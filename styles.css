@@ -182,7 +182,35 @@ h5 {
     background: #5c5656;   
     justify-content: space-evenly; 
 }
+#seccion-oms a {
+  text-decoration: none; /* Elimina la línea de hipervínculo */
+  color: #ffffff; /* Cambia el color del texto del enlace */
+  margin: 10px; /* Añade margen al enlace */
+}
+#seccion-oms h6 {
+  font-weight: bold; /* Aplica negrita (bold) a los elementos h6 */
+}
 
+
+/* Estilos para la sección de la Playlist de Spotify */
+#spotify-playlist {
+  background-color: #000000d4;
+  padding: 10px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.playlist-container p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#spotify-playlist a {
+  text-decoration: none; /* Elimina la línea de hipervínculo */
+  color: #333; /* Cambia el color del texto del enlace */
+}
 
 
 
