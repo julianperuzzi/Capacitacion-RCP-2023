@@ -74,7 +74,6 @@
         <!--  referencia jQuery, Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         
-        
         <script>
 
             function smoothScroll(target) {
@@ -108,7 +107,8 @@
 
 
         <h1>¿Qué es RCP?</h1>
-        <p id="intro1">La Reanimación Cardiopulmonar, o RCP, es una técnica vital de primeros auxilios de compresiones torácicas para mantener el flujo sanguíneo y el suministro de oxígeno en el cuerpo cuando alguien ha dejado de respirar o su corazón ha dejado de latir.</p>
+
+        <p id="intro">La Reanimación Cardiopulmonar, o RCP, es una técnica vital de primeros auxilios de compresiones torácicas para mantener el flujo sanguíneo y el suministro de oxígeno en el cuerpo cuando alguien ha dejado de respirar o su corazón ha dejado de latir.</p>
 
 
 
@@ -118,7 +118,7 @@
 
              <h1>Manual de Primeros Auxilios</h1>
             <div class="button-container" id="manual">
-                 <a href="pdf/manual_1ros_auxilios_web.pdf" class="btn" target="_blank" >
+                 <a href="pdf/manual_1ros_auxilios_web.pdf" class="btn download-button" target="_blank" >
                     <i class="fas fa-images"></i> Descargar Manual 
                    </a>
               </div>
@@ -181,7 +181,7 @@
 
 
         <!-- Sección de la Organización Mundial de Salud -->
-        <div class="seccion-oms d-flex flex-column align-items-center m-3 mt-5 mb-5" id="seccion-oms">
+        <div class="seccion-oms d-flex flex-column align-items-center m-3 " id="seccion-oms">
 
              
              <div class="seccion-oms d-flex align-items-center">
@@ -201,27 +201,98 @@
         <!-- FIN Sección de la Organización Mundial de Salud -->
 
 
+        <!------------------- Recuadro DIVISOR CARRUSEL DE IMAGENES ------------------->
+        <div class="contenedor" id="carrusel">
+            <div class="seccion">
+                <h5>Imágenes Informativas</h5>
+            </div>
+        </div>
+        <div id="image-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/14.jpg" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/15.jpg" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <!-- Repite el siguiente bloque para cada imagen adicional -->
+                <div class="carousel-item">
+                    <img src="img/17.jpg" class="d-block w-100" alt="Imagen 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/18.jpg" class="d-block w-100" alt="Imagen 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/19.jpg" class="d-block w-100" alt="Imagen 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/20.jpg" class="d-block w-100" alt="Imagen 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/21.jpg" class="d-block w-100" alt="Imagen 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/24.jpg" class="d-block w-100" alt="Imagen 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/25.jpg" class="d-block w-100" alt="Imagen 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/27.jpg" class="d-block w-100" alt="Imagen 3">
+                </div>
+                <!-- ... (repite para más imágenes) ... -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#image-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#image-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
         <!------------------- Recuadro DIVISOR DEA ------------------->
-            <div class="contenedor" id="dea">
-                <div class="seccion">
-                    <h5>DEA - Desfibrilador</h5>
-                </div>
+        <div class="contenedor" id="dea">
+            <div class="seccion">
+                <h5>DEA - Desfibrilador</h5>
             </div>
-            <div class="containerr" >
-                <div class="imagen-con-borde" >
-                    <img src="img/imagen dea.png" alt="..." >
-                    <img src="img/ct3gx6.jpg" alt="">
-                </div>
+        </div>
+        <div class="containerr" >
+            <div class="imagen-con-borde" >
+                <img src="img/imagen dea.png" alt="..." >
+                <img src="img/ct3gx6.jpg" alt="">
             </div>
+            <div class="descripcion-dea mt-3" style="font-weight: bold;">
+
+                <h5>Cómo usar un DEA (Desfibrilador Externo Automático)</h5>
+                <p class="mt-2">
+                    Un DEA es un dispositivo que puede ayudar a restablecer el ritmo cardíaco normal en caso de paro cardíaco. Para usar un DEA:
+                </p>
+                <ol>
+                    <li>Enciende el DEA siguiendo las instrucciones del dispositivo.</li>
+                    <li>Coloca los electrodos en el pecho de la persona siguiendo las indicaciones visuales.</li>
+                    <li>El DEA analizará el ritmo cardíaco y determinará si se requiere una descarga eléctrica.</li>
+                    <li>El DEA hará la descarga eléctrica de ser necesario</li>
+                    <li>Continúa siguiendo las instrucciones del DEA y proporcionando RCP hasta que llegue ayuda médica.</li>
+                </ol>
+            </div>
+        </div>
+
+                    <!------------------- Recuadro CORAZON ------------------->
+        <div class="palpitating-image-container">
+            <img src="img/211755_heart_icon.png" alt="Imagen Palpitante">
+        </div>
 
             <!------------------- Recuadro DIVISOR SPOTIFY ------------------->
             <div class="contenedor" id="spotify-playlist">
                 <div class="playlist-container">
                     <h1>Playlist Spotify RCP</h1>
-                    <a href="https://open.spotify.com/playlist/0aQyiudC2QA9irpfETwpMr?si=b91b9979cefe48bd" target="_blank">
+                    <a href="https://open.spotify.com/playlist/0Zn5eFN54B1TEcgHGVxU9S?si=0273efd6491a4a27" target="_blank">
                         <img src="img/7124272_spotify_logo_icon.png" alt="Playlist de Spotify" width="50%">
                     
-                    <p>Escucha nuestra playlist especial para practicar RCP mientras te capacitás. ¡Dale ritmo a tus compresiones!</p></a>
+                    <p>Escucha nuestra playlist especial para practicar RCP. ¡Dale ritmo a tus compresiones!</p></a>
                 </div>
             </div>
 

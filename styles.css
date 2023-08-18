@@ -30,20 +30,6 @@ header {
     color: rgb(255, 255, 255);
     padding: initial;
 }
-/* CARROUSEL MARTES 25.HTML */
-.carousel {
-    max-width: 90%;
-    margin: auto;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-
-  .carousel-inner img {
-    width: 100%;
-    height: auto;
-  }
-/* FIN CARROUSEL MARTES 25.HTML */
-
 
 
 /* HEADER IMAGEN */
@@ -60,36 +46,23 @@ h1 {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    flex-shrink: 0;
-    color: #FFF;
-    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.379);
     font-size: 25px;
     font-weight: 700;
     margin-top: 10px;
     padding: 10px;
     letter-spacing: 2px;
 }
-
 #intro {
     display: flex;
-    color: #ffffff;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     font-style:normal;
     font-weight: 550;
     line-height: normal;
     padding: 15px;
+    letter-spacing: 1px;
 }
-#intro1 {
-    display: flex;
-    color: #ffffff;
-    text-align: center;
-    font-size: 14px;
-    font-style:normal;
-    font-weight: 550;
-    line-height: normal;
-    padding: 5px 15px;
-}
+
 
 /* SEPARADORES DE SECCIONES  */
 
@@ -105,36 +78,37 @@ h1 {
   margin-top: 20px;
   text-align: center;
 }
-
-.containerr {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0px 30px;
-
-}
-
-.imagen-con-borde {
-  text-align: center; /* Alineamos el contenido al centro horizontalmente */
-  border-radius: 10px;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.imagen-con-borde img {
-  display: block; /* Evitamos espacios no deseados debajo de las imágenes */
-  max-width: 70%;
-  height: auto;
-  margin: auto; /* Agregamos margen superior e inferior para separar las imágenes */
-}
-
-
 h5 {
     color: white;
     margin: 0px;
     font-size: 18px;
     font-weight: 700;
 }
+
+
+/* ESTILO seccion DEA  */
+.imagen-con-borde {
+  display: flex;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  flex-wrap: wrap;
+  align-items: center;
+}
+.imagen-con-borde img {
+  display: block; /* Evitamos espacios no deseados debajo de las imágenes */
+  max-width: 50%;
+  height: auto;
+  margin: auto; /* Agregamos margen superior e inferior para separar las imágenes */
+}
+.containerr {
+  justify-content: center;
+  align-items: center;
+  margin: 0px 30px;
+
+}
+
 
 
 /* ESTILO BOTON  */
@@ -144,35 +118,40 @@ h5 {
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
-
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 25px;
-  background-color: #45b14a;
-  color: #fff;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  color: #ff7023;
   text-decoration: none;
   border-radius: 50px;
-  font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.679);
-
 }
-
 .btn i {
-  margin-right: 20px;
+  text-align: center;
 }
-
-.btn:hover {
-  background-color: #00a63d;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+/* Estilos iniciales para el botón de Descargar Manual */
+.download-button {
+  transition: box-shadow 0.3s, transform 0.3s;
+  animation: breathing 2s infinite; /* Aplicar animación de respiración */
 }
-
+/* Animación de respiración */
+@keyframes breathing {
+  0%, 100% {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      transform: scale(1);
+  }
+  50% {
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+      transform: scale(1.05);
+  }
+}
 
 
 /* SECCION OMS RECURSOS DESCARGABLES */
@@ -190,6 +169,50 @@ h5 {
 #seccion-oms h6 {
   font-weight: bold; /* Aplica negrita (bold) a los elementos h6 */
 }
+
+/* Estilos para la sección de la CARRUSEL */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #ffad5c6c; /* Cambia el color aquí */
+}
+.carousel {
+  max-width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para el contenedor de la imagen palpitante */
+.palpitating-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 50px;
+  border-radius: 20px;
+  padding: 10px;
+  animation: pulse 0.51s infinite; /* Calculado para 110 pulsaciones por minuto */
+}
+/* Aplicar la animación a la imagen */
+.palpitating-image-container img {
+  width: 20%; /* Ajusta el tamaño de la imagen según sea necesario */
+  max-width: 400px; /* Establece un ancho máximo para la imagen */
+}
+/* Animación para hacer palpitar la imagen */
+@keyframes pulse {
+  0%, 100% {
+      background-color: #259732;
+      border: #ffffff solid 3px;
+  }
+  50% {
+      background-color: #00000000;
+      border: #ffffff solid 3px;
+  }
+}
+
 
 
 /* Estilos para la sección de la Playlist de Spotify */
@@ -212,68 +235,43 @@ h5 {
   color: #333; /* Cambia el color del texto del enlace */
 }
 
-
-
-/* SECCION RESPONSIVE */
-
-@media (max-width: 575.98px) {
-    
-    body {
-      font-size: 14px;
-    }
-
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  /* Ajustar margen de la barra de navegación en dispositivos móviles */
+  .navbar {
+    margin-bottom: 10px;
   }
-  
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    
-    body {
-      font-size: 15px;
-    }
-  
-
+  /* Ajustar altura de los videos para dispositivos móviles */
+  .col iframe {
+    height: 300px;
   }
-  
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    body {
-      font-size: 16px;
-    }
-    
-
+  /* Ajustar margen inferior de las secciones */
+  .contenedor, .carousel, #spotify-playlist {
+    margin-bottom: 20px;
   }
-  
-
-  @media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape) {
- 
-    .navbar{
-      font-size: 14px;
-
-    }
+  /* Ajustar tamaño de la imagen del banner */
+  .img-header {
+    margin-top: 30px;
   }
+}
 
-  @media (min-width: 992px) {
-    body {
-      font-size: 20px;
-      margin:0px 20px;
-    } 
-    .navbar{
-      font-size: 12px;
-
-    }
-    .img-header{
-      padding: 0px 100px 0px 100px;
-    }
-
+/* Estilos para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Ajustar tamaño de fuente para tablets */
+  h1 {
+    font-size: 22px;
   }
-  
-  @media (min-width: 1200px) {
-    body {
-      font-size: 30px;
-    } 
-    .img-header{
-      padding: 0px 200px 0px 200px;
-    }
-    .navbar{
-      font-size: 12px;
-
-    }
+  #intro, #intro1 {
+    font-size: 14px;
   }
+  /* Ajustar tamaño de botones para tablets */
+
+  .imagen-con-borde img {
+
+    max-width: 50%;
+    height: auto;
+    margin: auto; /* Agregamos margen superior e inferior para separar las imágenes */
+  }
+}
+
+
