@@ -203,7 +203,7 @@ h5 {
   margin: 10px 50px;
   border-radius: 20px;
   padding: 10px;
-  animation: pulse 0.55s infinite; /* Calculado para 110 pulsaciones por minuto */
+  animation: pulse 0.6s infinite; /* Calculado para 110 pulsaciones por minuto */
 }
 /* Aplicar la animación a la imagen */
 .palpitating-image-container img {
@@ -322,6 +322,7 @@ h5 {
   .palpitating-image-container {
     width: 50%;
     margin: 5vh auto;
+    animation: pulse 0.6s infinite;
   }
   #spotify-playlist {
     margin: 10vh 30vh;
