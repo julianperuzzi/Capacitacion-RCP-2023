@@ -203,7 +203,7 @@ h5 {
   margin: 10px 50px;
   border-radius: 20px;
   padding: 10px;
-  animation: pulse 0.51s infinite; /* Calculado para 110 pulsaciones por minuto */
+  animation: pulse 0.55s infinite; /* Calculado para 110 pulsaciones por minuto */
 }
 /* Aplicar la animación a la imagen */
 .palpitating-image-container img {
