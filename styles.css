@@ -2,7 +2,7 @@
 body {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    background: linear-gradient(180deg, #FF8450 0%, #ff743d 100%);
+    background-color: #FF753E;
     color: rgb(255, 255, 255);
     margin: 0;
     padding: 0; /* Eliminar el margen predeterminado del body */
@@ -26,7 +26,7 @@ body {
 header {
     width: 100%; 
     overflow: hidden; 
-    background: linear-gradient(180deg, #ffffff 0%, #ff8e62 100%);
+    background-color: #ff753e;
     color: rgb(255, 255, 255);
     padding: initial;
 }
@@ -89,6 +89,7 @@ h5 {
 .video-container {
   max-width: 1000px; /* Ajusta este valor según tus necesidades */
   margin: 0 auto;
+  align-items: center;
 }
 
 .video-container iframe {
@@ -117,8 +118,6 @@ h5 {
   margin: 0px 30px;
 
 }
-
-
 
 /* ESTILO BOTON  */
 .button-container {
@@ -222,8 +221,6 @@ h5 {
   }
 }
 
-
-
 /* Estilos para la sección de la Playlist de Spotify */
 #spotify-playlist {
   background-color: #000000d4;
@@ -242,6 +239,19 @@ h5 {
 #spotify-playlist a {
   text-decoration: none; /* Elimina la línea de hipervínculo */
   color: #333; /* Cambia el color del texto del enlace */
+}
+
+.mapaDEA {
+  max-width: 1000px; 
+  margin: 0 auto;
+  align-items: center;
+
+}
+.mapaDEA h4{
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 900;
 }
 
 /* Estilos para dispositivos móviles */
@@ -288,7 +298,7 @@ h5 {
   .img-header {
     display: block;
     margin: 0 auto;
-    width: 60%;
+    width: 70%;
     height: auto;
 
 }
@@ -328,3 +338,5 @@ h5 {
     margin: 10vh 30vh;
   }
 }
+
+

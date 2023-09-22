@@ -4,315 +4,128 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+            rel="stylesheet"    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
             
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Gs6ZGj7Iub8xx+Pe2msHTZbRYj2M2y8S5Mnkv0xnLzeo7Pr8sbC6+dVlC2Lj1TyaA34QOJ2YdC5eDFGn5wtaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link 
+            rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+            integrity="sha512-Gs6ZGj7Iub8xx+Pe2msHTZbRYj2M2y8S5Mnkv0xnLzeo7Pr8sbC6+dVlC2Lj1TyaA34QOJ2YdC5eDFGn5wtaQ==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link rel="stylesheet" href="styles.css">
-        <link rel="shortcut icon" href="img/134159_aid_hospital_room_emergency_first_icon (1).png">
+        <link 
+            rel="stylesheet" 
+            href="styles.css">
+
+        <link 
+            rel="shortcut icon" 
+            href="img/134159_aid_hospital_room_emergency_first_icon (1).png">
 
         <title>Capacitación RCP</title>
-        
+  
 
     </head>
-    
-    <!-- comienzo de código de página -->
 
-    <header>
+<header>
 
-
-
-        <!-- NAVBAR DE PAGINA  -->
-
-        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo segretaria.png" alt="Logo" width="auto" height="30"
-                        class="d-inline-block align-text-top ">
-                </a>
-    
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#introduccion"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-                            onclick="smoothScroll('#introduccion')">Introducción</a>
-                          </li>
-    
-                        <li class="nav-item">
-                            <a class="nav-link" href="#manual" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-                                onclick="smoothScroll('#manual')">Manual Primeros Auxilios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#rcp" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-                                onclick="smoothScroll('#rcp')">Aprende RCP</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#videos" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-                                onclick="smoothScroll('#videos')">Videos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#recursos" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-                                onclick="smoothScroll('#recursos')">Mas Recursos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#dea" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-                                onclick="smoothScroll('#dea')">DEA</a>
-                        </li>
-    
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    
-        <!--  referencia jQuery, Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        
-        <script>
-
-            function smoothScroll(target) {
-                const navbarHeight = $('.navbar').height(); 
-                const targetOffset = $(target).offset().top - navbarHeight - 30; 
-    
-                $('html, body').animate({
-                    scrollTop: targetOffset
-                }, 500);
-            }
-        </script>
-        
-
-          
-
-
-
-        <!-- BANNER DE PAGINA -->
-
-        <img class="img-header" src="img/Copia de Banner Digital 25 julio.jpg" style="margin-top: 60px;" id="introduccion" />
-    </header>
+    <!-- NAVBAR DE PAGINA  -->
+    <div class="navbar"></div>
+ 
+</header>
 
     <body>
+        
 
+    <!-- BANNER DE PAGINA -->
+    <div style="background: linear-gradient(180deg, #ffffff, #FF753E 100%);">
+    <img class="img-header" src="img/Copia de Banner Digital 25 julio (3).jpg"  id="introduccion" />
+    </div>
 
-        <!-- INTRODUCCION -->
+    <!-- INTRODUCCION -->
+    <div class="intro" ></div>
 
-        <h1>Capacitación RCP</h1>
+    <!-- SECCION MANUAL de Primero Auxilios LINK -->
 
-        <p id="intro">Bienvenidos a nuestra página web dedicada a la Reanimación Cardiopulmonar (RCP). En situaciones de emergencia, saber cómo realizar RCP puede marcar la diferencia entre la vida y la muerte.</p>
-
-
-        <h1>¿Qué es RCP?</h1>
-
-        <p id="intro">La Reanimación Cardiopulmonar, o RCP, es una técnica vital de primeros auxilios de compresiones torácicas para mantener el flujo sanguíneo y el suministro de oxígeno en el cuerpo cuando alguien ha dejado de respirar o su corazón ha dejado de latir.</p>
-
-
-
-
-
-             <!-- SECCION MANUAL LINK -->
-
-             <h1>Manual de Primeros Auxilios</h1>
-            <div class="button-container" id="manual">
-                 <a href="pdf/manual_1ros_auxilios_web.pdf" class="btn download-button" target="_blank" >
-                    <i class="fas fa-images"></i> Descargar Manual 
-                   </a>
-              </div>
+     <h1>Manual de Primeros Auxilios</h1>
+    <div class="button-container " id="manual">
+         <a href="pdf/manual_1ros_auxilios_web.pdf" class="btn download-button" target="_blank" >
+            <i class="fas fa-images"></i> Descargar Manual 
+           </a>
+      </div>
 
               
         
         
-        <!------------------- Recuadro DIVISOR ------------------->
-        <div class="contenedor" id="rcp">
-            <div class="seccion">
-                <h5>Aprendé a hacer RCP</h5>
-            </div>
+    <!-- Recuadro DIVISOR -->
+    <div class="contenedor" id="rcp" >
+        <div class="seccion">
+            <h5>Aprendé a hacer RCP</h5>
         </div>
+    </div>
 
+    <!-- Recuadro para el video -->
+    <!-- Video RCP -->
+    <div class="video-rcp"></div>
+     
 
-
-        <!-- Recuadro para el video -->
-        <!-- Video RCP -->
-        
-        <div class="col video-container" style="padding: 0px; margin-top: 30px; margin-bottom: 30px;">
-            <iframe width="100%" height="614" src="https://www.youtube.com/embed/LmKaKah4UqA" title="Aprende a hacer RCP - Seguridad Náutica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-         </div>
-
-
-
-        
-  
-
-
-        <!------------------- Recuadro DIVISOR ------------------->
-        <div class="contenedor " id="videos">
-
-                <h5>Videos Informativos</h5>
-
-        </div>
-
+    <!--Recuadro DIVISOR -->
+    <div class="contenedor " id="videos">
+            <h5>Videos Informativos</h5>
+    </div>
 
     <!-- Recuadro VIDEOS  -->
-    <!-- Video 1 -->
-        <div class="col  video-container" style="padding: 0px; margin-top: 30px; margin-bottom: 30px;">
-        
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/FvqMWfo0Hbs" title="SPANISH: RCP en acción | Una mirada en 3D dentro del cuerpo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <!-- Video 2 -->
-        <div class="col  video-container" style=" padding: 0px; margin-top: 30px; margin-bottom: 30px;">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/bVDl-afGkDc" title="RCP solo con las manos más DEA - Hombre (español)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- Videos -->
+    <div class="videos "></div>
 
-        </div>
-
-
-
-
-        <!------------------- Recuadro DIVISOR ------------------->
+    <!-- Recuadro DIVISOR -->
     <div class="contenedor" id="recursos">
         <div class="seccion">
             <h5>Recursos Descargables</h5>
         </div>
     </div>
 
+    <!-- Recursos Descargables -->
+        <div class="recursos"></div>
 
-        <!-- Sección de la Organización Mundial de Salud -->
-        <div class="seccion-oms d-flex flex-column align-items-center m-3 " id="seccion-oms">
+    <!-- Recuadro DIVISOR CARRUSEL DE IMAGENES -->
+        <div class="imagenes"></div>
 
-             
-             <div class="seccion-oms d-flex align-items-center">
-                <a href="https://play.google.com/store/apps/details?id=cz.kcck.android&hl=es_AR&gl=US"><h6 style="color:#ffffff; margin: 10px;">Pulsar CPR // Aplicación Ritmo RCP</h6></a>
-
-                <a href="https://play.google.com/store/apps/details?id=cz.kcck.android&hl=es_AR&gl=US"> <img  style="padding: 5px; width: 50%;" src="img/2701063_add_aid_create_first_increase_icon.png" /></a>              
-             </div>
-
-
-             <div class="seccion-oms d-flex align-items-center">
-                <a href="https://www.argentina.gob.ar/salud/primerosauxilios"><h6 style="color:#ffffff; margin: 10px;">Primeros Auxilios  Ministerio de Salud</h6></a>
-
-                <a href="https://www.argentina.gob.ar/salud/primerosauxilios"> <img  style="padding: 5px; width: 50%;" src="img/2701063_add_aid_create_first_increase_icon.png" /></a>              
-             </div> 
-
-        </div>
-        <!-- FIN Sección de la Organización Mundial de Salud -->
+    <!-- Recuadro DIVISOR DEA -->
+        <div class="DEA"></div>
+       
+    <!-- Recuadro DIVISOR DEA -->
+    <div class="mapaDEA"></div>
 
 
-        <!------------------- Recuadro DIVISOR CARRUSEL DE IMAGENES ------------------->
-        <div class="contenedor" id="carrusel">
-            <div class="seccion">
-                <h5>Imágenes Informativas</h5>
-            </div>
-        </div>
-        <div id="image-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/14.jpg" class="d-block w-100" alt="Imagen 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/15.jpg" class="d-block w-100" alt="Imagen 2">
-                </div>
-                <!-- Repite el siguiente bloque para cada imagen adicional -->
-                <div class="carousel-item">
-                    <img src="img/17.jpg" class="d-block w-100" alt="Imagen 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/18.jpg" class="d-block w-100" alt="Imagen 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/19.jpg" class="d-block w-100" alt="Imagen 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/20.jpg" class="d-block w-100" alt="Imagen 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/21.jpg" class="d-block w-100" alt="Imagen 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/24.jpg" class="d-block w-100" alt="Imagen 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/25.jpg" class="d-block w-100" alt="Imagen 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/27.jpg" class="d-block w-100" alt="Imagen 3">
-                </div>
-                <!-- ... (repite para más imágenes) ... -->
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#image-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#image-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
 
-
-        <!------------------- Recuadro DIVISOR DEA ------------------->
-        <div class="contenedor" id="dea">
-            <div class="seccion">
-                <h5>DEA - Desfibrilador</h5>
-            </div>
-        </div>
-        <div class="containerr" >
-            <div class="imagen-con-borde" >
-                <img src="img/imagen dea.png" alt="..." >
-                <img src="img/ct3gx6.jpg" alt="">
-            </div>
-            <div class="descripcion-dea mt-3" style="font-weight: bold;">
-
-                <h5>Cómo usar un DEA (Desfibrilador Externo Automático)</h5>
-                <h5><p class="mt-2">
-                    Un DEA es un dispositivo que puede ayudar a restablecer el ritmo cardíaco normal en caso de paro cardíaco. Para usar un DEA:
-                </p>
-                <ol>
-                    <li>Enciende el DEA siguiendo las instrucciones del dispositivo.</li>
-                    <li>Coloca los electrodos en el pecho de la persona siguiendo las indicaciones visuales.</li>
-                    <li>El DEA analizará el ritmo cardíaco y determinará si se requiere una descarga eléctrica.</li>
-                    <li>El DEA hará la descarga eléctrica de ser necesario</li>
-                    <li>Continúa siguiendo las instrucciones del DEA y proporcionando RCP hasta que llegue ayuda médica.</li>
-                </ol></h5>
-            </div>
-        </div>
-
-                    <!------------------- Recuadro CORAZON ------------------->
+    <!-- Recuadro CORAZON -->
         <div class="palpitating-image-container">
             <img src="img/211755_heart_icon.png" alt="Imagen Palpitante">
         </div>
 
-            <!------------------- Recuadro DIVISOR SPOTIFY ------------------->
-            <div class="contenedor" id="spotify-playlist">
-                <div class="playlist-container">
-                    <h1>Playlist Spotify RCP</h1>
-                    <a href="https://open.spotify.com/playlist/0Zn5eFN54B1TEcgHGVxU9S?si=0273efd6491a4a27" target="_blank">
-                        <img src="img/7124272_spotify_logo_icon.png" alt="Playlist de Spotify" width="50%">
-                    
-                    <p>Escucha nuestra playlist especial para practicar RCP. ¡Dale ritmo a tus compresiones!</p></a>
-                </div>
-            </div>
+    <!-- Recuadro DIVISOR SPOTIFY -->
+        <div class="spotify"></div>
 
-
+    <!-- Banner de fin de Pagina -->   
         <img class="img-header" src="img/Copia de Banner Digital 25 julio (2).jpg" style="margin-top: 5px;" />
 
 
 
-        <!-- Footer de Pagina -->
+    <!-- Footer de Pagina -->
+    <footer style="background: #ff743d; color: #ffffff; text-align: center; padding: 20px; font-size:medium;">
 
-            <footer style="background: linear-gradient(180deg, #ff743d, #ffd2a5 100%);; color: #ffffff; text-align: center; padding: 20px; font-size:medium;">
+        ©Julian Peruzzi <a href="https://www.linkedin.com/in/julianperuzzi" target="_blank" style="color: #ffffff; font-weight: bold;">www.linkedin.com/in/julianperuzzi</a>
 
-                ©Julian Peruzzi <a href="https://www.linkedin.com/in/julianperuzzi" target="_blank" style="color: #ffffff;">www.linkedin.com/in/julianperuzzi</a>
-
-            </footer>
-        <!-- FIN Footer de Pagina -->
+    </footer>
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
+    <!-- Referencia JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>       
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <script src="index.js"></script>
     </body>
 </html>
