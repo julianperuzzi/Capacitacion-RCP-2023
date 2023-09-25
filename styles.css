@@ -4,11 +4,11 @@ body {
     font-size: 16px;
     background-color: #FF753E;
     color: rgb(255, 255, 255);
-    margin: 0;
-    padding: 0; /* Eliminar el margen predeterminado del body */
+    padding: 0;; /* Eliminar el margen predeterminado del body */
 }
 
 /* BARRA DE NAVEGACION */
+
 .navbar-toggler:focus {
   outline: none;
   box-shadow: none;
@@ -157,7 +157,7 @@ h5 {
   }
   50% {
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-      transform: scale(1.1);
+      transform: scale(1.05);
   }
 }
 
@@ -213,20 +213,21 @@ h5 {
 @keyframes pulse {
   0%, 100% {
       background-color: #259732;
-      border: #ffffff solid 3px;
+      border: #259732 solid 3px;
   }
   50% {
-      background-color: #00000000;
+      background-color: #ffffff00;
       border: #ffffff solid 3px;
   }
 }
 
 /* Estilos para la sección de la Playlist de Spotify */
 #spotify-playlist {
-  background-color: #000000d4;
+  background-color: #000000e2;
   padding: 10px;
   text-align: center;
   margin-top: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.777); /* Agrega una sombra */
 }
 
 .playlist-container p {
@@ -237,9 +238,10 @@ h5 {
 }
 
 #spotify-playlist a {
-  text-decoration: none; /* Elimina la línea de hipervínculo */
-  color: #333; /* Cambia el color del texto del enlace */
+  text-decoration: none;
+  color: #333;
 }
+
 
 .mapaDEA {
   max-width: 1000px; 
@@ -247,12 +249,7 @@ h5 {
   align-items: center;
 
 }
-.mapaDEA h4{
-  display: block;
-  text-align: center;
-  color: #ffffff;
-  font-weight: 900;
-}
+
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
@@ -275,8 +272,11 @@ h5 {
 }
 
 /* Estilos para tablets */
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 767px) and (max-width: 1023px) {
   /* Ajustar tamaño de fuente para tablets */
+  body{
+    margin-top: 20px;
+  }
   h1 {
     font-size: 22px;
   }
@@ -295,6 +295,12 @@ h5 {
 
 /* Estilos para PC */
 @media (min-width:1024px) and (max-width: 2048px) {
+  body{
+    margin-top: 20px;
+  }
+
+
+
   .img-header {
     display: block;
     margin: 0 auto;
