@@ -2,8 +2,8 @@
 body {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    background-color: #FF753E;
-    color: rgb(255, 255, 255);
+    background-color: #E4E4E4;
+    color: #3f3f3f;
     padding: 0;; /* Eliminar el margen predeterminado del body */
 }
 
@@ -14,19 +14,19 @@ body {
   box-shadow: none;
 }
 .navbar-toggler-icon {
-  transition: transform 0.3s ease;
+  transition: transform 0.7s ease;
 }
 
 
 /* Estilo para el botón cuando está abierto */
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 
 header {
     width: 100%; 
     overflow: hidden; 
-    background-color: #ff753e;
+    background-color: #E4E4E4;
     color: rgb(255, 255, 255);
     padding: initial;
 }
@@ -71,7 +71,7 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background:#5ab965;
+  background:#ffffff;
   padding:10px;
   border-radius: 10px;
   margin: 10px;
@@ -79,7 +79,7 @@ h1 {
   text-align: center;
 }
 h5 {
-    color: white;
+    color: #3f3f3f;
     margin: 0px;
     font-size: 18px;
     font-weight: 700;
@@ -96,28 +96,7 @@ h5 {
   width: 100%;
 }
 
-/* ESTILO seccion DEA  */
-.imagen-con-borde {
-  display: flex;
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
-  flex-wrap: wrap;
-  align-items: center;
-}
-.imagen-con-borde img {
-  display: block; /* Evitamos espacios no deseados debajo de las imágenes */
-  max-width: 50%;
-  height: auto;
-  margin: auto; /* Agregamos margen superior e inferior para separar las imágenes */
-}
-.containerr {
-  justify-content: center;
-  align-items: center;
-  margin: 0px 30px;
 
-}
 
 /* ESTILO BOTON  */
 .button-container {
@@ -162,26 +141,11 @@ h5 {
 }
 
 
-/* SECCION OMS RECURSOS DESCARGABLES */
-.seccion-oms {
-    text-align: center;
-    border-radius: 17px;
-    background: #5c5656;   
-    justify-content: space-evenly; 
-}
-#seccion-oms a {
-  text-decoration: none; /* Elimina la línea de hipervínculo */
-  color: #ffffff; /* Cambia el color del texto del enlace */
-  margin: 10px; /* Añade margen al enlace */
-}
-#seccion-oms h6 {
-  font-weight: bold; /* Aplica negrita (bold) a los elementos h6 */
-}
 
 /* Estilos para la sección de la CARRUSEL */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #ffad5c6c; /* Cambia el color aquí */
+    background-color: #9292926c; /* Cambia el color aquí */
 }
 .carousel {
   max-width: 90%;
@@ -223,32 +187,31 @@ h5 {
 
 /* Estilos para la sección de la Playlist de Spotify */
 #spotify-playlist {
-  background-color: #000000e2;
+  background-color: #E4E4E4;
   padding: 10px;
   text-align: center;
+  margin: 5%;
   margin-top: 30px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.777); /* Agrega una sombra */
+  box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.777); /* Agrega una sombra */
 }
 
-.playlist-container p {
+.playlist-container p{
   margin-top: 10px;
   font-size: 16px;
-  color: #ffffff;
+  color: #171717;
   font-weight: bold;
 }
 
-#spotify-playlist a {
+#spotify-playlist a{
   text-decoration: none;
-  color: #333;
+  color: white;
 }
 
 
-.mapaDEA {
-  max-width: 1000px; 
-  margin: 0 auto;
-  align-items: center;
 
-}
+
+
+
 
 
 /* Estilos para dispositivos móviles */

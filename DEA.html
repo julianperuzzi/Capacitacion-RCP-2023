@@ -1,16 +1,33 @@
-<link rel="stylesheet" href="styles.css">
 
-<div class="contenedor" id="dea">
+<link rel="stylesheet" href="DEA.css">
+
+
+<div class="contenedor mt-5" id="dea">
     <div class="seccion">
         <h5>DEA - Desfibrilador</h5>
     </div>
 </div>
-<div class="containerr" >
-    <div class="imagen-con-borde" >
-        <img src="img/imagen dea.png" alt="..." >
-        <img src="img/ct3gx6.jpg" alt="">
+<div id="image-carousel-1" class="carousel slide w-75" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/imagen dea.png" class="d-block" alt="Imagen 1">
+        </div>
+        <div class="carousel-item">
+            <img src="img/ct3gx6.jpg" class="d-block" alt="Imagen 2">
+        </div>
     </div>
-    <div class="descripcion-dea mt-3" style="font-weight: bold;">
+    <button class="carousel-control-prev" type="button" data-bs-target="#image-carousel-1" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#image-carousel-1" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+</div>
+<div class="descripcion-dea mt-3" style="font-weight: bold;">
 
         <h5>Cómo usar un DEA (Desfibrilador Externo Automático)</h5>
         <h5><p class="mt-2">
@@ -23,5 +40,10 @@
             <li>El DEA hará la descarga eléctrica de ser necesario</li>
             <li>Continúa siguiendo las instrucciones del DEA y proporcionando RCP hasta que llegue ayuda médica.</li>
         </ol></h5>
-    </div>
 </div>
+
+<div class="descripcion-dea text-center bg-success text-white" >
+    <h4>Geolocalización de DEA en Argentina</h4>
+</div>
+
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1kjiWpPktBA6XDvOoF_z9Ulabi1uBR6I&ehbc=2E312F&noprof=1" width="100%" height="480"></iframe>
