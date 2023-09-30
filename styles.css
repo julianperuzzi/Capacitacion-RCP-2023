@@ -77,6 +77,7 @@ h1 {
   margin: 10px;
   margin-top: 20px;
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.257) 3px 3px 6px 0px inset, rgba(30, 30, 30, 0.071) -3px -3px 6px 1px inset;
 }
 h5 {
     color: #3f3f3f;
@@ -113,7 +114,7 @@ h5 {
   justify-content: center;
   padding: 15px 30px;
   background-color: #ffffff;
-  color: #ff7023;
+  color: #444444;
   text-decoration: none;
   border-radius: 50px;
   font-weight: bold;
@@ -167,6 +168,7 @@ h5 {
   border-radius: 20px;
   padding: 10px;
   animation: pulse 0.6s infinite; /* Calculado para 110 pulsaciones por minuto */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 /* Aplicar la animación a la imagen */
 .palpitating-image-container img {
@@ -192,7 +194,7 @@ h5 {
   text-align: center;
   margin: 5%;
   margin-top: 30px;
-  box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.777); /* Agrega una sombra */
+  box-shadow: rgb(158, 158, 158) 3px 3px 6px 0px inset, rgba(175, 175, 175, 0.256) -3px -3px 6px 1px inset;;
 }
 
 .playlist-container p{

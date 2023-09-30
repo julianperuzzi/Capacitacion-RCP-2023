@@ -12,14 +12,16 @@
   text-decoration: none; 
   margin: 10px; 
   margin: 20px 20px;
-  border: rgba(118, 118, 118, 0) solid 2px;
-  background-color: #E4E4E4;
+  background-color: #eae9e9;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0px 0px 30px rgba(34, 34, 34, 0.178);
+  box-shadow: rgba(177, 177, 177, 0.48) 6px 2px 16px 0px, rgba(88, 88, 88, 0.8) -6px -2px 16px 0px;
+
+  
 }
 
 
 #seccion-oms h6 {
   font-weight: bold; /* Aplica negrita (bold) a los elementos h6 */
 }
+
