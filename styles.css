@@ -183,7 +183,7 @@ h5 {
   }
   50% {
       background-color: #ffffff00;
-      border: #ffffff solid 3px;
+      border: #E4E4E4 solid 3px;
   }
 }
 
@@ -211,11 +211,6 @@ h5 {
 
 
 
-
-
-
-
-
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
   /* Ajustar margen de la barra de navegación en dispositivos móviles */
@@ -239,7 +234,9 @@ h5 {
 /* Estilos para tablets */
 @media (min-width: 767px) and (max-width: 1023px) {
   /* Ajustar tamaño de fuente para tablets */
-  body{
+  body{ 
+    width: 90%;
+    margin: auto;
     margin-top: 20px;
   }
   h1 {
@@ -260,54 +257,12 @@ h5 {
 
 /* Estilos para PC */
 @media (min-width:1024px) and (max-width: 2048px) {
-  body{
-    margin-top: 20px;
-  }
+ body{
+  margin: auto;
+  margin-top: 20px;
+  width: 90vh;
 
-
-
-  .img-header {
-    display: block;
-    margin: 0 auto;
-    width: 70%;
-    height: auto;
-
-}
-
-  h1 {
-    font-size: 24px;
-  }
-  #intro, #intro1 {
-    font-size: 20px;
-    margin: 20px 30vh;
-  }
-  h5 {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-  .carousel {
-    max-width: 40%;
-    margin: auto;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .containerr{
-    margin: auto 30vh;
-  }
-  .imagen-con-borde img {
-    max-width: 25%;
-    height: auto;
- 
-  }
-  .palpitating-image-container {
-    width: 50%;
-    margin: 5vh auto;
-    animation: pulse 0.6s infinite;
-  }
-  #spotify-playlist {
-    margin: 10vh 30vh;
-  }
+ }
 }
 
 
